@@ -1,0 +1,25 @@
+{
+  "views": 50000,
+  "duration": 7503,
+  "uploads": 50,
+  "savings": {
+	"mobile": {
+	  "playback": 100,
+	  "uploads": 300
+	},
+	"wifi": {
+	  "playback": 200,
+	  "uploads": 200
+	}
+  },
+  "usage": {
+	"mobile": {
+	  "downloads": 123,
+	  "uploads": 23
+	},
+	"wifi": {
+	  "downloads": 412,
+	  "uploads": 10
+	}
+  }
+}

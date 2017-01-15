@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center_horizontal"
+				android:orientation="vertical">
+
+	<LinearLayout
+		android:id="@+id/texts"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="15dp"
+		android:layout_marginTop="5dp"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/header"
+			style="@style/StatisticsCircleLabelHeader"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Header"/>
+
+		<TextView
+			android:id="@+id/text"
+			style="@style/StatisticsCircleLabel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Uploads (40%)"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_below="@id/texts"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/oval_small"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="18dp"
+			android:src="@drawable/oval_small"/>
+
+		<ImageView
+			android:id="@+id/line"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="-3dp"
+			android:layout_marginTop="12dp"
+			android:src="@drawable/line_top"/>
+
+		<ImageView
+			android:id="@+id/oval"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="-4dp"
+			android:src="@drawable/oval"/>
+	</LinearLayout>
+
+</RelativeLayout>

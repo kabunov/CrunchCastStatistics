@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:gravity="center_horizontal"
+			  android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/header"
+		style="@style/StatisticsHeader"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/two_point"
+		android:text="@string/statistics_savings"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/two_point">
+
+		<FrameLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1">
+
+			<com.crunchcast.presentation.screen.statistics.view.TabButton
+				android:id="@+id/statistics_all"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				app:checked="true"
+				android:background="@drawable/tab_background"
+				android:text="@string/statistics_all"/>
+
+		</FrameLayout>
+
+		<FrameLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1">
+
+			<com.crunchcast.presentation.screen.statistics.view.TabButton
+				android:id="@+id/statistics_mobile"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:background="@drawable/tab_background"
+				android:text="@string/statistics_mobile"/>
+
+		</FrameLayout>
+
+		<FrameLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1">
+
+			<com.crunchcast.presentation.screen.statistics.view.TabButton
+				android:id="@+id/statistics_wifi"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:background="@drawable/tab_background"
+				android:text="@string/statistics_wifi"/>
+
+		</FrameLayout>
+
+	</LinearLayout>
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/circle_size"
+		android:layout_marginBottom="@dimen/three_point"
+		android:layout_marginTop="@dimen/three_point"
+		android:background="@drawable/statistics_circle"
+		android:gravity="center">
+
+		<com.crunchcast.presentation.screen.statistics.view.CircleView
+			android:id="@+id/arc1"
+			android:layout_width="@dimen/circle_size"
+			android:layout_height="@dimen/circle_size"
+			android:layout_gravity="center"
+			app:arcColor="@color/circle1"/>
+
+		<com.crunchcast.presentation.screen.statistics.view.CircleView
+			android:id="@+id/arc2"
+			android:layout_width="@dimen/circle_size"
+			android:layout_height="@dimen/circle_size"
+			android:layout_gravity="center"
+			app:arcColor="@color/circle2"/>
+
+		<com.crunchcast.presentation.screen.statistics.view.StatisticsLabel
+			android:id="@+id/label_top"
+			app:direction="top"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
+		<com.crunchcast.presentation.screen.statistics.view.StatisticsLabel
+			android:id="@+id/label_bottom"
+			app:direction="bottom"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
+		<LinearLayout
+
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/circle_text"
+				style="@style/StatisticsSavedValue"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<TextView
+				style="@style/StatisticsSaved"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:text="@string/statistics_saved"/>
+
+		</LinearLayout>
+
+	</FrameLayout>
+
+</LinearLayout>

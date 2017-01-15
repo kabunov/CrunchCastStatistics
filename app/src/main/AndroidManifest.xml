@@ -3,6 +3,7 @@
 		  package="com.crunchcast">
 
 	<application
+		android:name=".presentation.application.App"
 		android:allowBackup="true"
 		android:icon="@mipmap/ic_launcher"
 		android:label="@string/app_name"
@@ -11,12 +12,19 @@
 		<activity
 			android:name=".presentation.screen.main.MainActivity"
 			android:label="@string/app_name"
-			android:theme="@style/AppTheme.NoActionBar">
+			android:theme="@style/AppTheme.NoActionBar"
+			android:configChanges="orientation"
+			android:screenOrientation="portrait">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
 
 				<category android:name="android.intent.category.LAUNCHER"/>
 			</intent-filter>
+		</activity>
+		<activity android:name=".presentation.screen.statistics.view.StatisticsActivity"
+			android:label="@string/statistics_title"
+				  android:configChanges="orientation"
+				  android:screenOrientation="portrait">
 		</activity>
 	</application>
 

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_statistics"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#fff"
+	tools:context="com.crunchcast.presentation.screen.statistics.view.StatisticsActivity">
+
+	<ScrollView
+		android:id="@+id/content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:orientation="vertical">
+
+			<ImageView
+				android:layout_width="120dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/one_point"
+				android:src="@drawable/profile"/>
+
+			<include
+				layout="@layout/layout_divider"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/one_point"
+				android:layout_marginTop="@dimen/one_point">
+
+				<LinearLayout
+					style="@style/StatisticsTopSection"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/views"
+						style="@style/StatisticsTopSectionText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+
+					<TextView
+						style="@style/StatisticsTopSectionHeader"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/statistics_views"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					style="@style/StatisticsTopSection"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/duration"
+						style="@style/StatisticsTopSectionText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+
+					<TextView
+						style="@style/StatisticsTopSectionHeader"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/statistics_duration"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					style="@style/StatisticsTopSection"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/uploads"
+						style="@style/StatisticsTopSectionText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+
+					<TextView
+						style="@style/StatisticsTopSectionHeader"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/statistics_uploads"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<include
+				layout="@layout/layout_divider"/>
+
+			<com.crunchcast.presentation.screen.statistics.view.StatisticsGroupsView
+				android:id="@+id/savings_group"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				app:headerText="@string/statistics_savings"/>
+
+			<include
+				layout="@layout/layout_divider"/>
+
+			<com.crunchcast.presentation.screen.statistics.view.StatisticsGroupsView
+				android:id="@+id/usage_group"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				app:headerText="@string/statistics_usage"/>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+	<ProgressBar
+		android:id="@+id/progress"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:indeterminate="true"/>
+
+</FrameLayout>

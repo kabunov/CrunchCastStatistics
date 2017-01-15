@@ -17,4 +17,57 @@
 
 	<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
+	<style name="StatisticsTopSection">
+		<item name="android:padding">@dimen/one_point</item>
+		<item name="android:gravity">center_horizontal</item>
+
+	</style>
+
+	<style name="StatisticsTopSectionHeader">
+		<item name="android:textSize">12sp</item>
+		<item name="android:textColor">@color/text_color_light</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:layout_marginTop">@dimen/one_point</item>
+	</style>
+
+	<style name="StatisticsTopSectionText">
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:textColor">@color/text_color</item>
+	</style>
+
+	<style name="StatisticsHeader">
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:textColor">@color/text_color</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:layout_marginTop">@dimen/one_point</item>
+	</style>
+
+	<style name="StatisticsSavedValue">
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">24sp</item>
+		<item name="android:textColor">@color/text_color</item>
+		<item name="android:textAllCaps">true</item>
+	</style>
+
+	<style name="StatisticsSaved">
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">@color/text_color</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:layout_marginTop">@dimen/half_point</item>
+	</style>
+
+	<style name="StatisticsCircleLabelHeader">
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">@color/text_color</item>
+		<item name="android:textAllCaps">true</item>
+	</style>
+
+	<style name="StatisticsCircleLabel">
+		<item name="android:textSize">12sp</item>
+		<item name="android:textColor">@color/text_color_light</item>
+	</style>
+
 </resources>
